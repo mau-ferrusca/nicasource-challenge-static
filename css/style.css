@@ -1,0 +1,146 @@
+body {
+  font-family: "Poppins", serif;
+  background: #fcfcfc;
+}
+#hero,
+nav {
+  background: #F6F6F7;
+}
+#hero {
+  padding-bottom: 165px;
+}
+:root {
+  --main: #F13C45;
+  --secondary: #0B2342;
+  --gray-text: #999;
+}
+div[class^="tag-"] {
+  position: relative;
+}
+.tag-start {
+  margin-left: 32px;
+}
+.tag-start::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 27px;
+  height: 2px;
+  background: red;
+  bottom: 48%;
+  left: -32px;
+}
+.tag-end {
+  margin-right: 30px;
+}
+.tag-end::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 27px;
+  height: 2px;
+  background: red;
+  bottom: 48%;
+  right: -32px;
+}
+section,
+footer {
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+.main-color {
+  color: var(--main);
+}
+.text-secondary {
+  color: var(--secondary) !important;
+}
+.text-gray {
+  color: var(--gray-text);
+}
+.btn {
+  padding: 0.5rem 2rem;
+}
+.btn.btn-primary {
+  background-color: var(--main);
+  border-color: var(--main);
+}
+.btn-outline-primary {
+  border-color: var(--main);
+  color: var(--main);
+}
+.btn-outline-primary:hover {
+  background-color: var(--main);
+  border-color: var(--main);
+  color: #fff;
+}
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 0.2rem;
+  background: var(--main);
+  bottom: 0;
+  left: 0;
+  transform: scale(0, 1);
+  transition: transform 0.25s ease;
+}
+.nav-link:hover::after {
+  transform: scale(1, 1);
+}
+.card-body {
+  padding: 0.1rem 0.5rem;
+}
+.card-body p,
+.card-body h5 {
+  margin-bottom: 0;
+}
+.card.podcast {
+  border: none;
+  border-right: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0%;
+}
+#blogPosts .card .card-header {
+  border-left: 4px solid var(--main);
+  background: none;
+  border-bottom: none;
+}
+#blogPosts .card .card-header:first-child {
+  border-radius: 0%;
+}
+.inner-block {
+  background-color: #fff;
+}
+.galleryBox .col-3 {
+  height: 200px;
+}
+#subscriptionEmail {
+  background: #f5f5f5;
+}
+.media-icon {
+  background: var(--secondary);
+  height: 45px;
+  width: 45px;
+  border-radius: 45px;
+  margin-right: 1em;
+}
+.first-podcast {
+  position: relative;
+}
+.first-podcast::after {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: var(--main);
+  content: "";
+  top: -7.5px;
+  right: 22.5px;
+}
