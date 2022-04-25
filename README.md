@@ -1,0 +1,3 @@
+# nicasource-challenge-static
+
+
